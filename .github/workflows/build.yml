@@ -27,7 +27,7 @@ jobs:
         with:
           name: "ShittyOS v${{ github.run_number }}"
           tag_name: nightly
-          body_path: changes.txt
+          body_path: "Shitty OS release v${{ github.run_number }}! A .img file is provided for your convience of not having to install one program and run one command. Prepare to be underwhelmed whether you run this on real hardware or in a VM."
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             shittyos.img
