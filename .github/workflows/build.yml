@@ -20,19 +20,14 @@ jobs:
       - name: Assemble ShittyOS
         run: nasm -f bin theentirething.asm -o shittyos.img
 
-      - name: Create release
-        id: create_release
+      - name: Release
         uses: softprops/action-gh-release@v1
+        continue-on-error: true
+        id: attempt-1
         with:
-          tag_name: v${{ github.run_number }}
           name: "ShittyOS v${{ github.run_number }}"
-          body: "Automatically built ShittyOS img, if you dare use this on hardware/in a VM. Prepare to be underwhelmed."
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-      - name: Upload .img
-        uses: softprops/action-gh-release@v1
-        with:
-          files: shittyos.img
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: nightly
+          body_path: changes.txt
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            shittyos.img
