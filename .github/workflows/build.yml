@@ -18,7 +18,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y nasm
       
       - name: Assemble ShittyOS
-        run: nasm -f bin shittyos.asm -o shittyos.img
+        run: nasm -f bin theentirething.asm -o shittyos.img
 
       - name: Create release
         id: create_release
