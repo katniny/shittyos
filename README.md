@@ -1,11 +1,7 @@
-# ShittyOS
-The name explains it.
+<div style="text-align: center:">
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Femojiisland.com%2Fcdn%2Fshop%2Fproducts%2FPoop_Emoji_2_grande.png%3Fv%3D1571606092&f=1&nofb=1&ipt=baf1a69b926b70e232541aefa4a6e836ea1db347d17a7198ef25fd854771259c" style="width: 150" />
 
-It's simply just an OS that makes the background brown then prints a string.
+    # ShittyOS
 
-That's it.
-
-You can use it to learn or whatever. MIT because it's just 45 lines of assembly, it's not that special.
-
-## Using ShittyOS
-If you dare do this, we provide an .img file in the Releases that you can run in a VM... or on real hardware. It can't be installed, so it won't damage your computer or whatever. If it does damage your PC though somehow, I'm not responsible!
+    A very unpleasant desktop experience.
+</div>
